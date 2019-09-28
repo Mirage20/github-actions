@@ -1,0 +1,9 @@
+name: Custom Action
+on: [pull_request]
+
+jobs:
+  custom:
+    name: Hangouts
+    steps:
+      - name: Send to Hangouts
+        uses: docker://mirage20/hangouts-action:latest
