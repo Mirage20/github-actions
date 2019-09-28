@@ -1,0 +1,12 @@
+name: Always Pass
+on: [pull_request, push]
+
+jobs:
+  pass:
+    name: Pass Everything
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
