@@ -1,5 +1,5 @@
 name: Context Dump
-on: [check_run, check_suite, issues, pull_request, pull_request_review, push]
+on: [check_run, check_suite, issues, pull_request, pull_request_review, push, status]
 
 jobs:
   dump_all:
