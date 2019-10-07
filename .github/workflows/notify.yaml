@@ -8,4 +8,7 @@ jobs:
       - name: Send Message
         uses: docker://mirage20/hangouts-action:latest
         env:
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SELF_ACTION_NAME: Hangouts
+          SKIP_NOTIFY_LABEL: work-in-progress
+
